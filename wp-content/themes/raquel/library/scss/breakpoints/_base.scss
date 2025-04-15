@@ -1,0 +1,257 @@
+/*Resetted labels*/
+*{box-sizing: border-box;-webkit-font-smoothing: antialiased;}
+a,
+a:hover, a:focus { text-decoration: none; outline: none; }
+a img   { border: none; outline: none; }
+input   { outline: none; }
+img{max-width: 100%;}
+*{hyphens: none !important;}
+figure{margin: 0;}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/*END Resetted labels*/
+
+body {	
+    font-size: 16px;    
+	-webkit-font-smoothing: antialiased;
+    &:after{
+        width: 100%;
+        height: 100vh;
+        left: -100%;
+        margin: 0 auto;
+        top: 0;
+        z-index: 8;
+        content: "";
+        position: fixed;
+        transition: all 0.4s ease-out;
+        background: rgba(0, 19, 85, 0.7);        
+    }
+    &.open-nav-xs{
+        overflow: hidden;
+        header{            
+            border-bottom-color: transparent;
+            nav{
+                left: 0;
+            }
+        }
+        &:after{
+            left: 0;
+        }
+    }
+}
+.text-3{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+
+}
+.banner-home{
+    position: relative;
+    z-index: 1;
+    img{
+        width: 100%;
+    }
+}
+.iframe-youtube{
+    max-width: 768px;
+    margin: -15px auto 50px;
+    display: block;
+    iframe{
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+.pagination-site{
+    bottom: 0 !important;
+    margin-top: 30px;
+    position: relative !important;
+    .swiper-pagination-bullet{
+        width: 12px;
+        height: 12px;
+        background: #47b7fd;
+        margin: 0 8px !important;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active{
+        background: magenta;
+    }
+}
+.main-recursos{
+    padding: 40px 15px;
+    hr{
+        margin: 50px 0;
+    }
+}
+.modal-generico{
+    .btn-close{
+        position: absolute;
+        right: 10px;
+        top: 10px;        
+    }
+    article{
+        max-width: 400px;
+        padding: 20px;
+        text-align: center;
+        margin: 0 auto;
+        background: #fff;
+        color: #000;
+    }
+}
+.accordion-button, .btn-close{
+    &:focus, &:hover, &:active{
+        outline: none;
+        box-shadow: none;
+        border: 0;
+        text-shadow: none;
+    }
+}
+.card-example{
+    border-radius: 10px;
+    border: 1px solid #666;
+    max-width: 600px;
+    min-height: 150px;
+    width: 100%;
+    text-align: center;
+}
+.main-swiper-card{
+    position: relative;
+}
+.redes{
+    display: inline-block;
+    vertical-align: top;
+    margin:  30px 0;
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        li{
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 10px;
+            a{           
+                background-size: 100% !important;     
+                transition: all 0.3s ease;
+                display: block;
+                color: #fff;
+                text-indent: -9999px;
+                width: 30px;
+                height: 30px;
+            }
+            &.icon-ws{
+                a{
+                    background: url('../img/background/icon-ws.png') no-repeat center top;
+                }
+            }
+            &.icon-it{
+                a{
+                    background: url('../img/background/icon-it.png') no-repeat center top;                    
+                }
+            } 
+            &.icon-fb{
+                a{
+                    background: url('../img/background/icon-fb.png') no-repeat center top;                    
+                }
+            }
+            &.icon-yt{
+                a{
+                    background: url('../img/background/icon-yt.png') no-repeat center top;
+                }
+            }
+            &.icon-x{
+                a{
+                    background: url('../img/background/icon-x.png') no-repeat center top;                    
+                }
+            }                                    
+        }        
+    }    
+}
+.btn-fixed{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 3;
+    ul{
+        li{
+            display: block;
+            a{
+                width: 40px;
+                height: 40px;
+                display: block;
+                text-indent: -9999px;
+            }
+            &.icon-ws{
+                a{
+                    background: url('../img/background/icon-ws.png') no-repeat center top;
+                }
+            }
+        }
+    }
+}
+
+/*Default styles*/
+.grid{
+    display: grid;
+    gap: 30px;
+}
+
+.flex{
+    display: flex;
+}
+.flex-lightbox {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.flex-center{
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex-between{    
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.grid-2{grid-template-columns: 1fr 1fr;}
+.grid-3{grid-template-columns: 1fr 1fr 1fr;}
+.grid-4{grid-template-columns: 1fr 1fr 1fr 1fr;}
+.grid-2-repeat{grid-template-columns: repeat(2, 1fr);}
+.grid-3-repeat{grid-template-columns: repeat(3, 1fr);}
+.grid-4-repeat{grid-template-columns: repeat(4, 1fr);}
+
+.swiper{
+    overflow: hidden !important;
+}
+.clear-fix {
+    &::after {
+        content: "";
+        clear: both;
+        width: 100%;
+        display: block;
+    }
+}
+.mb-none		{ margin-bottom: 0;}
+.padding-none   { padding-left: 0; padding-right: 0;}
+.text-center	{ text-align: center;}
+.full			{ clear: both; width: 100%; }
+.pl-none		{ padding-left: 0; }
+.pr-none		{ padding-right: 0; }
+.plr-none		{ padding-left: 0;padding-right: 0; }
+.clr            { clear: both; float: none; }
+.center         { margin: auto; }
+.inline         { display: inline-block; vertical-align: top; }
+.inline-bottom  { display: inline-block; vertical-align: bottom; }
+.left           { float: left; }
+.right          { float: right; }
+.relative		{ position: relative; }
+.wrapper-main   { max-width: 1170px; }
+.wrapper-main-lg{ max-width: 1230px; }
+.wrapper-main-md{ max-width: 1000px; }
+.wrapper-main-sm{ max-width: 850px; }
+/*END Default styles*/

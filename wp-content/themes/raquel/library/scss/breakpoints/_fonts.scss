@@ -1,0 +1,45 @@
+// src: url('./fonts/./fonts/HelveticaNeueLTStd-Lt.eot');
+
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: url('./fonts/Raleway-Bold.eot');
+    src: url('./fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Raleway-Bold.woff') format('woff'),
+        url('./fonts/Raleway-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway-SemiBold';
+    src: url('./fonts/Raleway-SemiBold.eot');
+    src: url('./fonts/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Raleway-SemiBold.woff') format('woff'),
+        url('./fonts/Raleway-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'VIRUST';
+    src: url('./fonts/VIRUSTRegular.eot');
+    src: url('./fonts/VIRUSTRegular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/VIRUSTRegular.woff') format('woff'),
+        url('./fonts/VIRUSTRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway-Black';
+    src: url('./fonts/Raleway-Black.eot');
+    src: url('./fonts/Raleway-Black.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Raleway-Black.woff') format('woff'),
+        url('./fonts/Raleway-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
